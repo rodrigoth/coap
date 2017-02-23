@@ -214,7 +214,7 @@ class coap(object):
         except e.messageFormatError as err:
             log.warning('malformed message {0}: {1}'.format(u.formatBuf(rawbytes),str(err)))
             return
-
+	print message
         # dispatch message
         try:
             if   message['code'] in d.METHOD_ALL:
